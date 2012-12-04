@@ -14,9 +14,9 @@ public class Enigma {
 
     private char[] shift(char[] line) {
         char[] encryptedLine = new char[line.length];
-        int wheelOffsetPosition = (int) (System.nanoTime() % 28);
         for (int i = 0; i < line.length; i++) {
             char c = line[i];
+            int wheelOffsetPosition = (int) (System.nanoTime() % 28);
             int j = c + wheelOffsetPosition;
             encryptedLine[i] = (char)j;
         }
