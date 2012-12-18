@@ -1,5 +1,7 @@
 package encryption;
 
+import java.util.Scanner;
+
 
 public class Enigma {
 
@@ -11,8 +13,8 @@ public class Enigma {
     }
 
     private static void encrypt() {
-        String line = System.console().readLine();
-        System.console().printf("%1$2s", line.replaceAll("e", "3") + "\n");
+        String line = new Scanner(System.in).nextLine();
+        System.out.println("You entered " + line.replaceAll("e", "3") + "\n");
     }
 
 }
