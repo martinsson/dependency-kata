@@ -13,7 +13,8 @@ public class Leeter {
      * @param line TODO
      */
     public void encrypt(String line) {
-        System.out.println("You entered " + line.replaceAll("e", "3") + "\n");
+        String encryptedLine = line.replaceAll("e", "3") + "\n";
+        System.console().printf("The encryption of %1$2s is : %2$2s", line, encryptedLine );
     }
     
 }
