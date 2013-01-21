@@ -1,14 +1,18 @@
 package encryption;
 
-import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
-
-import java.io.Console;
 
 import org.junit.Test;
 
+import encryption.Leeter.Myconsole;
+
 public class EnigmaTest {
 
-    
+    @Test public void 
+    testname() throws Exception {
+         Leeter leeter = new Leeter();
+         leeter.encrypt(mock(Myconsole.class));
+         
+    }
 
 }
